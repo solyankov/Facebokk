@@ -1,0 +1,278 @@
+@import vars
+@import fonts
+@import libs
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+*
+    font-display: auto
+    margin: 0
+    padding: 0
+    text-decoration: none
+    list-style: none
+    outline: none
+    font-family: Roboto
+
+html
+    scroll-behavior: smooth
+    overflow-x: hidden
+
+
+
+$fbInputArea : #F1F2F5
+.header
+    
+    align-content: center
+    background-color: white
+    height: 41px
+    padding: 10px 14px 
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2)
+    .headerContent
+        display: flex
+        justify-content: center
+        height: 40px
+        .searchHeader
+            display: flex
+            align-items: center
+            width: 281px
+            background-color: $fbInputArea
+            border-radius: 20px
+            margin-left: 8px
+            color: white
+            .contentSearch
+                margin-left: 10px
+                input
+                    width: 231px
+                    border: none
+                    background-color: $fbInputArea
+        .menu
+            display: flex
+            margin-left: 93px
+            margin-top: 10px
+            .menuItem
+                margin-right: 115px
+                position: relative
+                .red
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    margin-left: 15px
+                    top: -10px
+                    position: absolute
+                    width: 20px
+                    height: 20px
+                    background: #DE3F4F
+                    border-radius: 50%
+                    b
+                        color: white
+                        font-size: 8pt
+                &:hover
+                    cursor: pointer
+                    fill:#0572EF 
+        .userInfo
+            align-items: center
+            display: flex
+            margin-top: 5px
+            b
+                margin-left: 7px
+                margin-right: 17px
+            .avatar
+                border-radius: 50%
+                height: 29px
+                width: 29px
+                background: #0572EF
+            .useroption
+                display: flex
+                align-items: center
+                justify-content: center
+                position: relative
+                width: 40px
+                height: 40px
+                background: $fbInputArea
+                border-radius: 50%
+                margin-right: 8px
+                &:hover
+                    cursor: 
+                    background: #c4c8cf
+                    transition: .3s
+                .red
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    margin-left: 25px
+                    top: -5px
+                    position: absolute
+                    width: 20px
+                    height: 20px
+                    background: #DE3F4F
+                    border-radius: 50%
+                    b
+                        color: white
+                        font-size: 8pt
+
+
+
+
+body
+    overflow-x: hidden
+    max-width: 1920px
+    min-width: 320px
+    margin: auto
+    .UserWrapper
+        height: 552px
+        display: flex
+        flex-direction: column
+        align-items: center
+        
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2)
+        .WidePhoto
+            width: 941px
+            height: 348px
+            background-color: black
+            border-radius: 0px 0px 8px 8px
+        .UserInfo
+            width: 877px
+            height: 552-348px
+            .AvaDescription
+                display: flex
+                position: relative
+                .avatarka
+                    height: 132px
+                    width: 132px
+                    border-radius: 50%
+                .Name
+                    font-size: 28px
+                    margin-left: 28px
+                    margin-top: 42px
+                    p
+                        font-size: 17px
+                        color: #66676B
+                button
+                    position: absolute
+                    width: 312px
+                    height: 40px
+                    background-color: #0572EF
+                    border: none
+                    border-radius: 6px
+                    bottom: 0px
+                    right: 0px
+                    display: flex
+                    align-items: center
+                    img
+                        margin-left: 105px
+                        margin-right: 6px
+                    p
+                        font-size: 17px
+                        color: white
+                    &:hover
+                        cursor: pointer
+                        background-color: #0e65c9
+            .UserMenu
+                border-top: 1px solid #c1c1c1
+                margin-top: 20px
+                
+                ul
+                    
+                    
+                    &::after
+                    content: ""
+                    li
+                        display: block
+                        float: left
+                        &:hover
+                            ul
+                                
+                                display: block
+                                background-color: #e7e7e7
+                        a
+                            display : inline-block
+                            height: 30px
+                            padding : 10px 20px
+                            text-decoration: none
+                            color: black
+                            &:hover
+                                border-bottom: 3px solid #0e65c9
+                    ul
+                        
+                        position: absolute
+                        display: none
+    .content
+        display: flex
+        box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.2)
+        background-color: #F1F2F5
+        justify-content: center
+        .contentWrapper
+            width: 877px
+            padding-top: 15px
+            display: flex
+            .left
+                width: 361px
+                margin-right: 15px
+                .about
+                    padding: 15px
+                    height: 733px
+                    background: white
+                    border-radius : 8px
+                    margin-bottom: 15px
+                    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+                .photos
+                    padding: 15px
+                    height: 288px
+                    background: white
+                    border-radius : 8px
+                    margin-bottom: 15px
+                    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+                .videos
+                    padding: 15px
+                    height: 329px
+                    background: white
+                    border-radius : 8px
+                    margin-bottom: 15px
+                    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+                .pageTransparency
+                    padding: 15px
+                    height: 195px
+                    background: white
+                    border-radius : 8px
+                    margin-bottom: 15px
+                    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+            .right
+                width: 502px
+                p
+                    font-size: 15px
+                    color: #66676B
+                    margin-bottom: 11px
+                .newPost
+                    display: flex
+                    padding: 15px
+                    height: 113px
+                    background: white
+                    border-radius : 8px
+                    margin-bottom: 32px
+                    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+                    .photoPost
+                        height: 41px
+                        width: 41px
+                        border-radius: 50%
+                        background: #0572EF
+                        margin-right: 12px
+                    .createPostBtn
+                        border: none
+                        width: 424px
+                        height: 41px
+                        background: #E5E6EB
+                        border-radius: 6px
+                        font-weight: 600
+                        &:hover
+                            cursor: pointer
+                            background: #bebfc2
+
+                .post
+                    padding: 15px
+                    height: 635px
+                    background: white
+                    border-radius : 8px
+                    margin-bottom: 32px
+                    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+
+
